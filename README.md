@@ -16,15 +16,13 @@ Spring Boot project built with Maven or Gradle
 VS Code or any IDE (like IntelliJ, STS)
 
 ## 🛠️ 2. MySQL Setup
-- 2a. Start MySQL server
-    Make sure MySQL is running.
-
-- 2b. Create database
+- Start MySQL server
+- Make sure MySQL is running.
+- Create database
 ```sql
 CREATE DATABASE employee_db;
 ```
-
-- 2c. Optional: Create a user (if not using root)
+- Optional: Create a user (if not using root)
 ```sql
 CREATE USER 
 'springuser'@'localhost' IDENTIFIED BY 'password';
@@ -32,8 +30,8 @@ GRANT ALL PRIVILEGES ON employee_db.* TO 'springuser'@'localhost';
 ```
 
 ## 🧩 3. Spring Boot Backend
-- 3a. application.properties or application.yml
-    Ensure your DB settings are configured correctly:
+- Application.properties or application.yml
+  Ensure your DB settings are configured correctly:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
@@ -47,8 +45,8 @@ spring.jpa.show-sql=true
 spring.mvc.cors.allowed-origins=http://localhost:4200
 ```
 
-- 3b. Build and run Spring Boot app
-    From the root of the backend project:
+- Build and run Spring Boot app
+  From the root of the backend project:
 
 ```bash
 ./mvnw spring-boot:run      # if using Maven wrapper
@@ -67,17 +65,17 @@ Tomcat started on port(s): 8080
 Started Application in X seconds
 ```
 ## 🎨 4. Angular Frontend
-- 4a. Navigate to frontend folder
+- Navigate to frontend folder
 ```bash
 cd path/to/angular-app
 ```
 
-- 4b. Install dependencies (only needed once)
+- Install dependencies (only needed once)
 ```bash
 npm install
 ```
 
-- 4c. Start Angular dev server
+- Start Angular dev server
 ```bash
 ng serve
 ```
