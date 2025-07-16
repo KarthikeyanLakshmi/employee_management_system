@@ -1,6 +1,6 @@
 # A Spring Boot program to capture employee details from Angular UI and store them in MySQL project.
 
-## ✅ 1. Check Prerequisites
+## 1. Check Prerequisites
 Ensure the following are installed:
 
 MySQL (with a schema created, e.g., employee_db)
