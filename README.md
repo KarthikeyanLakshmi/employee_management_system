@@ -67,7 +67,7 @@ Started Application in X seconds
 ## 🎨 4. Angular Frontend
 - Navigate to frontend folder
 ```bash
-cd path/to/angular-app
+cd path/to/angular-frontend
 ```
 
 - Install dependencies (only needed once)
@@ -91,7 +91,7 @@ Spring Boot allows CORS (Cross-Origin Resource Sharing). You can do it globally 
 ```java
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api/employees")
+@RequestMapping("/api/synapse")
 public class EmployeeController {
     ...
 }
